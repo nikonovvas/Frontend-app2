@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  font-size: 14px;
-}
-
 .header__bg {
   background-image: url("/img/bg.jpg") center no-repeat;
 }

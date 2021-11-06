@@ -3,13 +3,6 @@
     padding: 0;
 }
 
-body {
-    font-size: 14px;
-    // 
-}
-
-
-
 .header{
     &__bg{
         background-image: url("/img/bg.jpg") center no-repeat;
@@ -53,22 +46,4 @@ body {
     position: relative;
     width: 100%;
 }
-
-
-
-
-// // .nav{
-//     &__items{
-//         font-family: Roboto;
-//         display: block;
-//         text-align: center;
-//         font-style: normal;
-//         font-weight: 400;
-//         font-size: 14px;
-//         line-height: 16px;
-//         text-decoration: none;
-//         padding: 10px 0;
-//     }
-// }
-
 
