@@ -1,0 +1,64 @@
+.main-title {
+  padding: 0;
+  margin: 0;
+  font-family: Amatic SC;
+  font-weight: normal;
+  font-size: 36px;
+  color: #0c0101;
+  text-align: center;
+}
+
+.block-contacts {
+  padding: 35px 30px 0 30px;
+}
+
+.box-contact {
+  padding-top: 20px;
+}
+
+.box-contact__img {
+  width: 24px;
+  height: 24px;
+  margin: 0 20px 0 0;
+  float: left;
+}
+
+.box-contact__text {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  color: #0c0101;
+}
+
+.map {
+  padding: 50px 0 115px 0;
+  width: 100%;
+}
+
+.block-footer {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.block-footer__text {
+  padding: 23px 55px 0 16px;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+}
+
+*, *::after, ::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.body, html {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=styles.css.map */
