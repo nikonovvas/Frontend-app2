@@ -1,10 +1,23 @@
+
+@import "_section-sightseens";
+@import"_tour";
 @import "_section_welcome.scss";
 @import "_header.scss";
+
 
 
 *,*::after,::before{
     box-sizing: inherit;
 }
+    
+.body, html{
+    margin:0;
+    overflow-x: hidden;
+    min-width: 320px;//
+    height:100%;
+    box-sizing: border-box;
+}
+
 
 .body, html{
     margin:0;
