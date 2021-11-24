@@ -1,0 +1,15 @@
+.block-footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    &__text{
+        padding: 23px 55px 0 16px;
+
+
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 14px;
+        color:white;
+    
+    }
+}
