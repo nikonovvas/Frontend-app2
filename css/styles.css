@@ -1,23 +1,6 @@
-
 .main-title {
-  padding: 0;
+  padding: 80px 0 30px 0;
   margin: 0;
-}
-.container {
-  padding-top: 52px;
-  padding-left: 17px;
-  padding-right: 17px;
-}
-
-.section-sightseens {
-  position: relative;
-}
-
-.main-title {
-  margin: 0;
-  padding-top: 97px;
-  position: relative;
-
   font-family: Amatic SC;
   font-weight: normal;
   font-size: 36px;
@@ -26,7 +9,7 @@
 }
 
 .block-contacts {
-  padding: 35px 30px 0 30px;
+  padding: 16px 0 0 16px;
 }
 
 .box-contact {
@@ -59,23 +42,31 @@
 }
 
 .block-footer__text {
-  padding: 23px 55px 0 16px;
+  padding: 23px 54px 0 16px;
   font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
   color: white;
-  padding-bottom: 70px;
+}
+
+.container {
+  padding-top: 52px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.section-sightseens {
+  position: relative;
 }
 
 .sightseens {
-  position: relative;
   width: 100%;
   padding-bottom: 70px;
 }
 
 .sightseens__img {
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
@@ -125,7 +116,7 @@
   position: absolute;
   height: 180px;
   width: 100%;
-  background: gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), color-stop(rgba(255, 255, 255, 0.67)), to(#eeeeee));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), color-stop(rgba(255, 255, 255, 0.67)), to(#eeeeee));
   background: linear-gradient(180deg, rgba(196, 196, 196, 0), rgba(255, 255, 255, 0.67), #eeeeee);
   bottom: 0;
   left: 0;
@@ -143,8 +134,7 @@
 }
 
 .tour__text-about {
-  top: 20px;
-  margin-left: 28px;
+  margin: 20px 20px 0 20px;
   font-weight: 200;
   font-size: 14px;
   line-height: 16px;
@@ -183,13 +173,13 @@
   font-size: 14px;
   line-height: 16px;
   color: #9F9F9F;
-
 }
+
 .section-welcome {
   background-image: url(../img/DSC00015.jpg);
   background-position: center,center;
   background-size: cover,cover;
-  height: 100%;
+  height: 100vh;
   text-align: center;
 }
 
@@ -235,7 +225,10 @@
 }
 
 .header {
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
   position: fixed;
+  height: 90px;
   width: 100%;
   top: 0;
   left: 0;
@@ -290,7 +283,7 @@
 
 @media (max-width: 767px) {
   .continer {
-    padding: 0 30px 0  30px;
+    padding: 0 16px 0  16px;
     margin: 0 auto;
   }
   .header__burger {
@@ -372,6 +365,12 @@
   }
 }
 
+header.scroll {
+  background-color: black;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
 *, *::after, ::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -379,12 +378,8 @@
 
 .body, html {
   margin: 0;
-  overflow-x: hidden;
+  overflow: auto;
   min-width: 320px;
-  height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 14px;
