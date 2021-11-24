@@ -1,0 +1,42 @@
+.section-welcome{
+  background-image: url(../img/DSC00015.jpg);
+  background-position: center,center;
+  background-size: cover,cover;
+  height:100%;
+  text-align: center;
+
+}
+
+.floater {
+  float: left;
+  height: 50%;
+  width: 100%;
+  margin-bottom: -50px;
+}
+  
+.content{
+  height: 100%;
+
+  &-title{
+    margin: 0;
+    font-family: Amatic SC;
+    font-weight: normal;
+    font-size: 96px;
+    color: #fff; 
+
+  }
+  &-ltitle{
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top:0 ;
+  }
+  &__button{
+    background-color: transparent;
+    border: none;
+    padding:0;
+    padding-top: 200px;
+  }
+}
