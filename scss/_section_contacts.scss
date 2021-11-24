@@ -1,0 +1,35 @@
+.main-title{
+    padding: 0;
+    margin: 0;
+    font-family: Amatic SC;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgb(12, 1, 1);
+    text-align: center;
+}
+
+.block-contacts{
+    padding:35px 30px 0 30px;
+
+}
+
+.box-contact{
+    padding-top: 20px;
+    &__img{
+        width: 24px;
+        height: 24px;
+        margin: 0 20px 0 0;
+        float:left
+    }
+    &__text{
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgb(12, 1, 1);
+ 
+    }
+}
+.map{
+    padding: 50px 0 115px 0;
+    width: 100%;  
+}

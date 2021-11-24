@@ -1,10 +1,22 @@
+
+@import "_section_contacts.scss";
+@import"_footer.scss";
 @import "_section-sightseens";
 @import"_tour";
+
 
 
 *,*::after,::before{
     box-sizing: inherit;
 
+}
+
+.body, html{
+    margin:0;
+    overflow-x: hidden;
+    height: 100%;
+    box-sizing: border-box;
+}
 }
     
 .body, html{
@@ -14,3 +26,4 @@
     height:100%;
     box-sizing: border-box;
 }
+
