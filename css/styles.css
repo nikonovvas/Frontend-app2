@@ -225,7 +225,7 @@
 }
 
 .content__button {
-  background-image: url(/img/go-down.png);
+  background-image: url(../img/down.svg);
   height: 23px;
   width: 46px;
   background-size: cover;
@@ -313,7 +313,7 @@
 }
 
 .header__logo {
-  background-image: url(/img/logo.png);
+  background-image: url(../img/logo.png);
   background-size: cover;
   width: 48px;
   height: 43px;
