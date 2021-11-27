@@ -14,11 +14,10 @@
 .body, html{
     margin:0;
     overflow: auto;
-    // overflow-x: hidden;
     min-width: 320px;
-    // height:100%;
     box-sizing: border-box;
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 
