@@ -2,134 +2,239 @@
 <html lang="en">
 
 <head>
-
    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@400;500&display=swap"
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@400;500&display=swap">
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="css/styles.css">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Title</title>
+   <script type="text/javascript" src="js/script.js"></script>
 </head>
 
-<body class="body">
-   <div class="container">
-      <section class="section-sightseens">
-         <h1 class="main-title">Достопремечательности</h1>
-         <div class="sightseens">
-            <img src="img/dost.png" alt="" class="sightseens__img">
-            <h2 class="sightseens__name">Тропа предков</h2>
-            <p class="sightseens__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
-               orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare
-               condimentum
-               fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi
-               ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus
-               velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat
-               felis, pharetra vitae libero eu, posuere accumsan odio...</p>
-         </div>
-         <div class="sightseens">
-            <img src="img/dost.png" alt="" class="sightseens__img">
-            <h2 class="sightseens__name">Приисковый</h2>
-            <p class="sightseens__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
-               orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare
-               condimentum
-               fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi
-               ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus
-               velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat
-               felis, pharetra vitae libero eu, posuere accumsan odio...</p>
-         </div>
-         <div class="sightseens">
-            <img src="img/dost.png" alt="" class="sightseens__img">
-            <h2 class="sightseens__name">Сундуки</h2>
-            <p class="sightseens__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
-               orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare
-               condimentum
-               fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi
-               ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus
-               velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat
-               felis, pharetra vitae libero eu, posuere accumsan odio...</p>
-         </div>
-      </section>
 
-      <secion class="section-tour">
-         <h1 class="main-title">Туры</h1>
-         <div class="tour">
-            <img src="../img/tour.jpg" alt="" class="tour__img">
-            <div class="tour__text">
-               <h3 class="tour__text-name">Название</h3>
-               <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
-                  orci at rutrum pellentesque.
-               </p>
-               <p class="tour__text-price">
-                  От <b>10000</b> руб.
-               </p>
-               <button class="but-buy">
-                  <p class="but-buy_text">Купить</p>
-               </button>
-            </div>
-         </div>
-         <div class="tour">
-            <img src="../img/tour.jpg" alt="" class="tour__img">
-            <div class="tour__text">
-               <h3 class="tour__text-name">Название</h3>
-               <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
-                  orci at rutrum pellentesque.
-               </p>
-               <p class="tour__text-price">
-                  От <b>10000</b> руб.
-               </p>
-               <button class="but-buy">
-                  <p class="but-buy_text">Купить</p>
-               </button>
-            </div>
-         </div>
-         <h4 class="under-text"> Больше туров</h4>
-      </secion>
-   </div>
-</body>
-  
 <body class="body">
-   <section class="section-contacts">
-      <h1 class="main-title">Контакты</h1>
-      
-      <div class="block-contacts">
-         <div class="box-contact">
-            <div class="box-contact__img">
-               <img src="img/vectormap.png" alt="">
-            </div>
-            <span class="box-contact__text">655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</span>
+   <header class="header" id='header'>
+      <div class="container">
+         <div class="header__body">
+            <a href="/" class="header__logo"></a>
+            <button class="header__burger" type="button" id='btn-menu' onclick="onClickMenu();">
+               <span></span>
+            </button>
+            <nav class="header__menu" id='head-menu'>
+               <ul class="header__list">
+                  <li class="header__list-element">
+                     <a href="#section-welcome" class="header__link">Главная</a>
+                  </li>
+                  <li class="header__list-element">
+                     <a href="#section-sightseens" class="header__link">Достопремечательности</a>
+                  </li>
+                  <li class="header__list-element">
+                     <a href="#section-tour" class="header__link">Туры</a>
+                  </li>
+                  <li class="header__list-element">
+                     <a href="#section-contacts" class="header__link">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
          </div>
-         <div class="box-contact">
-            <div class="box-contact__img">
-               <img src="img/vectorphone.png" alt="">
-            </div>
-            <span class="box-contact__text">8 (3902) 22-53-35 </span>
-            <br>
-            <span class="box-contact__text">8 (3902) 24-30-71</span>
+      </div>
+   </header>
+
+   <section class="section-welcome" id="section-welcome">
+      <div class="content">
+         <div class="content__title">
+            <h1 class="content__title-titl">ХАКАСИЯ</h1>
+            <p class="content__title-ltitl">Туристическое Агенство Республики Хакасия</p>
          </div>
-         <div class="box-contact">
-            <div class="box-contact__img">
-               <img src="img/vectormail.png" alt="">
-            </div>
-            <a href="kancler@vskhakasia.ru" class="box-contact__text">kancler@vskhakasia.ru</a>
+         <a class="content__button" href="#section-sightseens" ></a>
+      </div>
+   </section>
+
+
+   <section class="section-sightseens" id="section-sightseens">
+      <div class="container">
+         <h2 class="main-title">Достопремечательности</h2>
+         <div class="sightseens">
+            <img src="img/sightseens.png" alt="" class="sightseens__img">
+            <h3 class="sightseens__name">Тропа предков</h3>
+            <p class="sightseens__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+               orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare
+               condimentum
+               fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi
+               ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus
+               velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat
+               felis, pharetra vitae libero eu, posuere accumsan odio...</p>
+         </div>
+         <div class="sightseens">
+            <img src="img/sightseens.png" alt="" class="sightseens__img">
+            <h3 class="sightseens__name">Приисковый</h3>
+            <p class="sightseens__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+               orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare
+               condimentum
+               fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi
+               ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus
+               velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat
+               felis, pharetra vitae libero eu, posuere accumsan odio...</p>
+         </div>
+         <div class="sightseens">
+            <img src="img/sightseens.png" alt="" class="sightseens__img">
+            <h3 class="sightseens__name">Сундуки</h3>
+            <p class="sightseens__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+               orci at rutrum pellentesque. Vivamus id nunc at ante vulputate egestas. Sed varius elit ornare
+               condimentum
+               fermentum. Integer mattis pretium tortor dictum tristique. Donec in congue mauris. Quisque vitae nisi
+               ultricies, efficitur odio vel, porta nulla. Donec porta, mauris nec pharetra mollis, diam lorem luctus
+               velit, nec ultricies nunc quam posuere dui. Donec at nisl lorem. Sed vitae sapien metus. In erat
+               felis, pharetra vitae libero eu, posuere accumsan odio...</p>
          </div>
       </div>
    </section>
-   <secttion class="map">
-      <div class="map">
-         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A74ef7033502c6da5c07e9c9a62bb1ab5b4b96aac41cd93d97906f2020bd639bd&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-      </div>
-   </secttion>
 
-
-
-
-
-   <footer>
-      <div class="block-footer">
-         <div class="block-footer__text">
-            Официальный сайт Агенства Туризма Республики Хакасия  ©  2021
+   <section class="section-tour" id="section-tour">
+      <div class="container">
+         <h2 class="main-title">Туры</h2>
+         <div class="tour">
+            <img src="img/tour.jpg" alt="" class="tour__img">
+            <div class="tour__text">
+               <h3 class="tour__text-name">Название</h3>
+               <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+                  orci at rutrum pellentesque.
+               </p>
+               <p class="tour__text-price">
+                  От <b>10000</b> руб.
+               </p>
+               <button class="but-buy">
+                  <p class="but-buy_text">Купить</p>
+               </button>
+            </div>
+         </div>
+         <div class="tour">
+            <img src="img/tour.jpg" alt="" class="tour__img">
+            <div class="tour__text">
+               <h3 class="tour__text-name">Название</h3>
+               <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+                  orci at rutrum pellentesque.
+               </p>
+               <p class="tour__text-price">
+                  От <b>10000</b> руб.
+               </p>
+               <button class="but-buy">
+                  <p class="but-buy_text">Купить</p>
+               </button>
+            </div>
+         </div>
+         <span class="show-more" id="show-more">
+            <div class="tour">
+               <img src="img/tour.jpg" alt="" class="tour__img">
+               <div class="tour__text">
+                  <h3 class="tour__text-name">Название</h3>
+                  <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+                     orci at rutrum pellentesque.
+                  </p>
+                  <p class="tour__text-price">
+                     От <b>10000</b> руб.
+                  </p>
+                  <button class="but-buy">
+                     <p class="but-buy_text">Купить</p>
+                  </button>
+               </div>
+            </div>
+            <div class="tour">
+               <img src="img/tour.jpg" alt="" class="tour__img">
+               <div class="tour__text">
+                  <h3 class="tour__text-name">Название</h3>
+                  <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+                     orci at rutrum pellentesque.
+                  </p>
+                  <p class="tour__text-price">
+                     От <b>10000</b> руб.
+                  </p>
+                  <button class="but-buy">
+                     <p class="but-buy_text">Купить</p>
+                  </button>
+               </div>
+            </div>
+            <div class="tour">
+               <img src="img/tour.jpg" alt="" class="tour__img">
+               <div class="tour__text">
+                  <h3 class="tour__text-name">Название</h3>
+                  <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+                     orci at rutrum pellentesque.
+                  </p>
+                  <p class="tour__text-price">
+                     От <b>10000</b> руб.
+                  </p>
+                  <button class="but-buy">
+                     <p class="but-buy_text">Купить</p>
+                  </button>
+               </div>
+            </div>
+            <div class="tour">
+               <img src="img/tour.jpg" alt="" class="tour__img">
+               <div class="tour__text">
+                  <h3 class="tour__text-name">Название</h3>
+                  <p class="tour__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
+                     orci at rutrum pellentesque.
+                  </p>
+                  <p class="tour__text-price">
+                     От <b>10000</b> руб.
+                  </p>
+                  <button class="but-buy">
+                     <p class="but-buy_text">Купить</p>
+                  </button>
+               </div>
+            </div>
+         </span>
+         <div class="more">
+            <button class="more__btn" id='more__btn' onclick="readMore()">Больше туров</и>
          </div>
       </div>
-   </footer>
+   </secion>
+
+   <section class="section-contacts" id="section-contacts">
+      <div class="container">
+         <h2 class="main-title">Контакты</h2>
+         <div class="block-contacts">
+            <div class="box-contact">
+               <div class="box-contact__img">
+                  <img src="img/vectormap.png" alt="">
+               </div>
+               <span class="box-contact__text">655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</span>
+            </div>
+            <div class="box-contact">
+               <div class="box-contact__img">
+                  <img src="img/vectorphone.png" alt="">
+               </div>
+               <span class="box-contact__text">8 (3902) 22-53-35 </span>
+               <br>
+               <span class="box-contact__text">8 (3902) 24-30-71</span>
+            </div>
+            <div class="box-contact">
+               <div class="box-contact__img">
+                  <img src="img/vectormail.png" alt="">
+               </div>
+               <span class="box-contact__text">kancler@vskhakasia.ru</span>
+            </div>
+         </div>
+      </div>
+      </section>
+
+      <section class="map-block">
+         <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+               src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A74ef7033502c6da5c07e9c9a62bb1ab5b4b96aac41cd93d97906f2020bd639bd&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+         </div>
+      </section>
+
+      <footer>
+         <div class="block-footer">
+            <div class="block-footer__text">
+               Официальный сайт Агенства Туризма Республики Хакасия © 2021
+            </div>
+         </div>
+      </footer>
+</body>
+
 </html>
