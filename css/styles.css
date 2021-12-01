@@ -8,8 +8,8 @@
   text-align: center;
 }
 
-.block-contacts {
-  padding: 16px 0 0 16px;
+.block-contacts__text {
+  padding: 25px 0 0 0;
 }
 
 .box-contact {
@@ -30,23 +30,119 @@
   color: #0c0101;
 }
 
-.map {
-  padding: 50px 0 115px 0;
+.map-block {
   width: 100%;
+  padding: 50px 0 115px 0;
+}
+
+.map-desktop {
+  padding-top: 50px;
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .section-contacts {
+    background-color: #E5E5E5;
+  }
+  .map-block {
+    display: none;
+    max-width: 800px;
+    padding-top: 30px;
+  }
+  .map-block__map {
+    padding-top: 0;
+  }
+  .map-desktop {
+    display: inline;
+  }
+  .block-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 70px;
+  }
+  .block-contacts__text {
+    padding: 70px 0 0 0;
+  }
 }
 
 .block-footer {
+  padding-top: 25px;
   width: 100%;
   height: 80px;
-  background-color: black;
 }
 
 .block-footer__text {
-  padding: 23px 54px 0 16px;
   font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
   color: white;
+}
+
+.block-footer__menu {
+  display: none;
+}
+
+.block-footer__title {
+  margin: 0 0 30px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.block-footer__contact {
+  display: none;
+  padding: 0 35px;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer__list {
+  padding: 0 0;
+}
+
+.footer__list-element {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .block-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 270px;
+  }
+  .block-footer__menu {
+    display: inline;
+  }
+  .block-footer__contact {
+    display: inline;
+  }
 }
 
 .container {
@@ -412,10 +508,10 @@
   z-index: 5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
-    padding: 0 16px 0  16px;
-    margin: 0 auto;
+    margin: 0 16px 0  16px;
+    padding: 0 0 0 0;
   }
   .header__burger {
     display: block;
