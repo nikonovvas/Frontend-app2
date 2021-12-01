@@ -51,10 +51,11 @@
     }
 
 }
-@media (max-width:767px){
+@media (max-width:768px){
     .container{
-        padding: 0 16px 0  16px;
-        margin: 0 auto;
+        margin: 0 16px 0  16px;
+        padding: 0 0 0 0;
+        // margin: 0 auto;
     }
     .header__burger{
         display: block;
