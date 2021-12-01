@@ -193,22 +193,73 @@
   padding-top: 30px;
 }
 
+.more-text {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .sightseens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sightseens__img {
+    display: table-header-group;
+  }
+  .sightseens__text {
+    display: table-footer-group;
+  }
+  .sightseens:nth-child(2n) .sightseens__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .sightseens:nth-child(2n) .sightseens__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  .sightseens:first-child {
+    padding-top: 0;
+  }
+  .sightseens:last-child {
+    padding-bottom: 100px;
+  }
+  .sightseens__text {
+    margin-left: 20px;
+  }
+  .sightseens__name {
+    padding-top: 0;
+  }
+  .main-title {
+    margin: 0;
+  }
+  .section-sightseens {
+    background-color: #E5E5E5;
+  }
+  .more-text {
+    display: inline;
+  }
+}
+
 .section-tour {
   position: relative;
 }
 
-.tour {
+.main-tour {
   position: relative;
   width: 100%;
   margin: 30px 0 20px 0;
 }
 
-.tour__img {
+.main-tour__img {
   height: 100%;
   width: 100%;
 }
 
-.tour__text {
+.main-tour__text {
   position: absolute;
   height: 180px;
   width: 100%;
@@ -220,7 +271,7 @@
   font-style: normal;
 }
 
-.tour__text-name {
+.main-tour__text-name {
   margin: 15px 25px;
   font-weight: normal;
   text-align: auto;
@@ -228,7 +279,7 @@
   line-height: 21px;
 }
 
-.tour__text-about {
+.main-tour__text-about {
   margin: 25px 25px 0 20px;
   font-weight: 200;
   font-size: 14px;
@@ -236,13 +287,21 @@
   color: #000000;
 }
 
-.tour__text-price {
+.main-tour__text-price {
   margin: 25px 25px 0 20px;
   font-weight: 200;
   font-size: 24px;
   line-height: 29px;
   font-family: Roboto;
   font-style: normal;
+}
+
+.main-tour--hidden {
+  display: none;
+}
+
+.main--all-hidden-visible .main-tour--hidden {
+  display: block;
 }
 
 .but-buy {
@@ -276,8 +335,34 @@
   color: #9F9F9F;
 }
 
-#show-more {
-  display: none;
+@media (min-width: 769px) {
+  .main-tour--hidden {
+    display: inline;
+  }
+  .main-title {
+    margin-bottom: 60px;
+    padding-top: 60px;
+  }
+  .more {
+    display: none;
+  }
+  #show-more {
+    display: inline;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-tour {
+    width: calc((100% / 3) - ( 60px/ 3));
+    margin: 0 30px 30px 0;
+  }
+  .main-tour:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .section-welcome {
